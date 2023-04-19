@@ -9,5 +9,5 @@
 
 
 ## To run Frontend locally, follow below readme file
-- [Todo Backend](https://github.com/malik106/react_native_node_todo_app/blob/master/todo-frontend/README.md)
+- [Todo Frontend](https://github.com/malik106/react_native_node_todo_app/blob/master/todo-frontend/README.md)
 
