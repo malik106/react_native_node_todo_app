@@ -12,16 +12,11 @@ Todo App - Frontend is built in following technologies:-
 - Pre-requisites
     > Node.js v16.13.0+ to run.
     
-    Clone the project by copying below mentioned command into your directory :-
-
-    ```sh
-    git clone <URL>
-    ```
 
     Change directory to ems by typing below mentioned command :-
 
     ```sh
-    cd <Project-Name>
+    cd todo-frontend
     ```
 
     Now run below mentioned command to install neccessary dependencies into your project :-
