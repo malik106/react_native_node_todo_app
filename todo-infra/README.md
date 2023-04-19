@@ -15,7 +15,7 @@
 
 -  To run application on web browser visit the link :-
     ```
-    npm run dev
+    http://localhost:19006
     ```
  
 
