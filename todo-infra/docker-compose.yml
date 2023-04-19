@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+  frontend:
+    build:
+      context: ../todo-frontend
+    container_name: "todo_frontend"
+    env_file:
+      - ./env/frontend.env
+    ports:
+      - 19000:19000
+      - 19001:19001
+      - 19002:19002
+      - 19006:19006
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ../todo-backend
+    container_name: "todo_backend"
+    env_file:
+      - ./env/backend.env
+    ports:
+      - 3001:3001
+    depends_on:
+      - db
+
+  db:
+    image: mysql
+    env_file:
+      - ./env/db.env
+    ports:
+      - 3306:3306
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
